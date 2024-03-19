@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chess Club WPS60</title>
+  <script src="https://kit.fontawesome.com/64287c2fd0.js" crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="twobackgrnd"></div>
+<h1> Hey Guys, It's time to play chess toghether!!!</h1>  
+  <p><strong>We are looking forward to meet people to get a chess match.</strong></p>
+  <p>If you are interested please fill out the form below and we will take contact to you to start our chess challenge asap.</p>
+</div>
+<div class="borddifer"> 
+  <form>
+  <label for="usern">Username:</label>
+  <input required type ="text" name="Username" id="usern"><br>
+  <label for="adr">Adress :</label>
+  <input type="text" name="Adress" id="adr"><br>
+  <label for="city">City :</label>
+  <input type="text" name="City" id="city"><br>
+  <label for="state">State :</label>
+  <input required type="text" name="State" id="state" maxlength="2" placeholder="2 character code"><br>
+  <label for="zcode">Zipcode :</label>
+  <input required type="text" name="Zipcode" id="zcode" placeholder="5 or 9 digits" pattern="^\d{5}9-\d{4})?$" title="Either 5 or 9 digits"><br>
+  <label for="date">Date :</label>
+  <input required type="text" name="date" id="date" value="" placeholder="mm/dd/yyyy"><br>
+  <label for="phone">Phone :</label>
+  <input required type="text" name="Phone" id="phone" value="" placeholder="xxx-xxx-xxxx"><br>
+  <label for="email">Email :</label>
+  <input valid type="text" name="email" id="email" autofocus required placeholder="xadffere@gmail.com"><br>
+  <label for="password">Password :</label>
+  <input valid type="password" name="password" id="password" required pattern="[a-zA--Z0-9]{6,}" placeholder="Add at least 6 letters or numbers">
+</div><br>
+  <fieldset>
+    <div id="questions">
+    <legend>Gender</legend>
+      <label for="gender1">Male</label>
+      <input type="checkbox" name="gender" id="gender1" value="Male"><br>
+      <label for="gender2">Female</label>
+      <input type="checkbox" name="gender" id="gender2" value="Female"><br>
+      <label for="gender1">I decline</label>
+      <input type="checkbox" name="gender" id="gender3" value="I decline"><br>
+    </div>
+  </fieldset><br>
+  <button type="submit">submit</button>
+    <br>
+  <button type="reset">reset</button>
+  </form><br>
+
+<h2 div> CHESS CLUB WPS60 </h2>
+<h3> Here you have the link of some training videos you can wathc to improve your chess level </h3>
+  <figure>
+    <select name="Chesstrainning" id="Chesstrainning">
+      <optgroup label="Begineers">
+        <option value="refrigerator">Refrigerator </option>
+        <option value="table">Ping Pong Table </option>
+        <option value="furniture">Furniture </option>
+      </optgroup>
+      <optgroup label= "Intermediate Level">
+        <option value="truck">Truck </option>
+        <option value="car">Car </option>
+      </optgroup>
+    </select>
+  </figure>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
