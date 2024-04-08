@@ -1,56 +1,133 @@
 
 body{
-  font-family: 100% 'Courier New', Courier, monospace;
+  background-repeat: no-repeat;
+  background-image: url("images/bulldogs3.png");
+  background-color: greenyellow;
 }
-twobackgrnd{
-  background: url("chess3.png")left top no-repeat;/*url("bulldogs.png")right bottom no-repeat*/
+.chessclub{
+  width: 400px;
+  float:left;
+  transition: width 3s;
+  color: #a336dd;
+  font-size: 40px;
+  font-family:"cambria";
+  text-shadow: 5px 5px #0be407;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 30px; 
+  margin-left: 450px;
+  margin-bottom:1px;
+  margin-right:250px;
 }
-
-h1{
+.purpose{
+  color: #550778;
+  width: 38em;
+  font-size: 20px;
+  text-align: left;
+  /*text-decoration: underline solid #38f702;
+  text-underline-offset: 6px;*/
+  font-family:"Arial";
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right:100px; 
+  margin-bottom:10px;
+  margin-left:120px;  
+}
+h1,h2,h3{
   color: #ff000d;
-  width: 12em;
-  text-size: 50px
-  text-family:"cambria";
+  width: 25em;
+  font-size: 30px;
+  font-family:"Cambria";
   text-align: left;
   font-weight: bold;
-  margin-top: 50px; 
-  margin-left: 500px;
+  margin-top: 15px;
+  margin-right:100px;
   margin-bottom:10px;
-  margin-right:200px;
+  margin-left:100px;
 }
-p{
-  color: blue;
-  width: 20em;
-  text-decoration: underline solid #48ed0c;
-  text-underline-offset: 2px;
-  text-family:"Arial" ;
-  text-align: left;
+ol.div{
+  position:relative;
+  color: #048140;
+  font-family:"Arial";
+  top: 100px;
+  left: 100px;
+  width: 250px;
+  height: 250px;
+  padding: 20px 20px 20px 10px;
+}
+p1{
+  color: #0008ff;
+  width: 38em;
+  float:left;
+  font-size: 20px;
+  text-align: center;
+  font-family:"Arial";
   font-weight: bold;
-  margin-top: 10px; 
-  margin-left: 500px;
+  margin-top: 10px;
+  margin-right:100px; 
   margin-bottom:10px;
-  margin-right:200px;
-  
+  margin-left:120px;  
 }
-
-h2.div {
-width: 300px;
-height: 100px;
-transition: width 3s;
-color: #00ffbf;
-text-size: 80px
-text-family:"cambria";
-text-shadow: 5px 5px red;
-text-align: left;
-font-weight: bold;
-margin-top: 300px; 
-margin-left: 280px;
-margin-bottom:1px;
-margin-right:250px;
+div.learning{
+  position:relative;
+  font-family:"Arial";
+  width: 50em;
+  top:10px;
+  color: #760472;
+  font-size: 20px;
 }
-div:hover {
+div.borddifer{
+  position:absolute;
+  top: 30px;
+  left: 1050px;
   width: 300px;
-  }
+  height: 250px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  } 
+label {
+  color: red;
+  float: left;
+  width: 6em;
+  text-align: right;
+  font-weight: bold;
+}
+input {
+  width: 10em;
+  background-color: #bcb8b8;
+  margin-bottom: 1em;
+  margin-left:1em;
+}
+input:required {
+  background-color: #fbfb79;
+  border: 1px solid red;
+}
 figure {
   float: right;
+}
+ul.div{
+  color: #5e2f03;
+  font-family:"Arial";
+  top: 100px;
+  left: 100px;
+  width: 250px;
+  height: 250px;
+  padding: 20px 20px 20px 10px;
+}
+button {
+  width: 5em;
+  height: 2em;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 10px 15px 20px 5px;
+  box-shadow: 10px 10px 10px 10px;
+  background-color: #d85bfb;
+  color: #403eac;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  border: 2px solid blue;
 }
