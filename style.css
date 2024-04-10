@@ -75,13 +75,12 @@ p{
 }
 form{
   position:absolute;
-  top: 10px;
+  top: 5px;
   left: 1050px;
   width: 360px;
   height: 250px;
   padding-top: 5px;
   padding-right: 20px;
-  padding-bottom: 5px;
   padding-left: 10px;
   } 
 label {
@@ -94,16 +93,9 @@ label {
 input {
   width: 10em;
   background-color: #bcb8b8;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
   margin-left:1em;
 }
-p1{
-  color: darkgoldenrod;
-  width: 38em;
-  font-size: 15px;
-  text-align: center;
-  font-family:"Arial"; 
-  }
 button {
   width: 5em;
   height: 2em;
