@@ -97,6 +97,13 @@ input {
   margin-bottom: 1em;
   margin-left:1em;
 }
+p1{
+  color: darkgoldenrod;
+  width: 38em;
+  font-size: 15px;
+  text-align: center;
+  font-family:"Arial"; 
+  }
 button {
   width: 5em;
   height: 2em;
