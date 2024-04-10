@@ -20,7 +20,7 @@ body{
   margin-right:250px;
 }
 .purpose{
-  color: #550778;
+  color: #0f57a3;
   width: 38em;
   font-size: 20px;
   text-align: left;
@@ -29,6 +29,16 @@ body{
   font-family:"Arial";
   font-weight: bold;
   margin-top: 10px;
+  margin-right:100px; 
+  margin-bottom:10px;
+  margin-left:120px;  
+}
+.learning{
+  font-family:"Arial";
+  width: 50em;
+  top:10px;
+  color: greenyellow;
+  font-size: 20px;
   margin-right:100px; 
   margin-bottom:10px;
   margin-left:120px;  
@@ -45,20 +55,15 @@ h1,h2,h3{
   margin-bottom:10px;
   margin-left:100px;
 }
-ol.div{
+ol{
   position:relative;
-  color: #048140;
   font-family:"Arial";
-  top: 100px;
-  left: 100px;
-  width: 250px;
-  height: 250px;
-  padding: 20px 20px 20px 10px;
+  text-align: left;
+  top: 10px;
 }
 p{
   color: #0008ff;
   width: 38em;
-  float:left;
   font-size: 20px;
   text-align: center;
   font-family:"Arial";
@@ -68,21 +73,13 @@ p{
   margin-bottom:10px;
   margin-left:120px;  
 }
-div.learning{
-  position:relative;
-  font-family:"Arial";
-  width: 50em;
-  top:10px;
-  color: #760472;
-  font-size: 20px;
-}
-div.borddifer{
+form{
   position:absolute;
-  top: 30px;
+  top: 10px;
   left: 1050px;
   width: 300px;
   height: 250px;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -99,22 +96,6 @@ input {
   background-color: #bcb8b8;
   margin-bottom: 1em;
   margin-left:1em;
-}
-input:required {
-  background-color: #fbfb79;
-  border: 1px solid red;
-}
-figure {
-  float: right;
-}
-ul.div{
-  color: #5e2f03;
-  font-family:"Arial";
-  top: 100px;
-  left: 100px;
-  width: 250px;
-  height: 250px;
-  padding: 20px 20px 20px 10px;
 }
 button {
   width: 5em;

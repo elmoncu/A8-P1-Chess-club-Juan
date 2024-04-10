@@ -34,18 +34,15 @@
     <h3>If you want to start your chess journey, you can follow this interesting links attached:</h3>
     <div class="learning">
       <ul>
-        <li><a href="https://www.chess.com/article/view/study-plan-for-beginners-the-opening">To learn from the
-            begining</a></li>
-        <li><a href="https://www.chess.com/article/view/study-plan-for-intermediate-players-the-opening2">Medium level
-            Learning</a></li>
-        <li><a href="https://www.chess.com/lessons/think-like-a-master">All you need to know to improve your chess up to
-            master level</a></li>
+        <li><a href="https://www.chess.com/article/view/study-plan-for-beginners-the-opening">To learn from the begining</a></li>
+        <li><a href="https://www.chess.com/article/view/study-plan-for-intermediate-players-the-opening2">Medium level Learning</a></li>
+        <li><a href="https://www.chess.com/lessons/think-like-a-master">All you need to know to improve your chess up to master level</a></li>
       </ul>
     </div>
     <form>
       <div class="borddifer">
+        <legend>Sign in:</legend>
         <fieldset>
-          <legend>Sign in :</legend>
           <label for="usern">Username:</label>
           <input required type="text" name="Username" id="usern"><br>
           <label for="adr">Adress :</label>
@@ -62,14 +59,14 @@
           <label for="phone">Phone :</label>
           <input required type="text" name="Phone" id="phone" value="" placeholder="xxx-xxx-xxxx"><br>
           <label for="email">Email :</label>
-          <input type="text" name="email" id="email" autofocus required placeholder="xadffere@gmail.com"><br>
+          <input type="text" name="email" id="email" placeholder="xadffere@gmail.com"><br>
           <label for="password">Password :</label>
-          <input type="password" name="password" id="password" required pattern="[a-zA--Z0-9]{6,}"
+          <input type="password" name="password" id="password" pattern="[a-zA--Z0-9]{6,}"
             placeholder="Add at least 6 letters or numbers">
         </fieldset>
       </div>
+        <legend>Chess Game Level </legend>
         <fieldset>
-          <legend>Chess Game Level </legend>
           <label for="level1">Beginner</label>
           <input type="checkbox" name="chess" id="Level1" value="Beginner"><br>
           <label for="level2">Intermediate</label>
@@ -77,8 +74,8 @@
           <label for="level3">Master</label>
           <input type="checkbox" name="chess" id="level3" value="Master"><br>
         </fieldset><br>
+        <legend>Select what kind of club you prefer to join: </legend>
         <figure>
-          <legend>Select what kind of club you prefer to join: </legend>
           <select name="Chesstrainning" id="Chesstrainning">
             <optgroup label="Begineers">
               <option value="Beginneron">Beginner on line </option>
@@ -94,7 +91,6 @@
         <button type="submit">submit</button><br>
         <button type="reset">reset</button>
     </form>
-
     <script src="script.js"></script>
 </body>
 
