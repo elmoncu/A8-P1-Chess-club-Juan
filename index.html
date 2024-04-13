@@ -41,7 +41,7 @@
           master level</a></li>
     </ul>
   </div>
-  <form action="/action_page.php">
+  <form action="/action_page.php" onsubmit="clicksubmitted()">
     <div class="borddifer">
       <fieldset>
         <legend>Sign in: </legend>
@@ -92,10 +92,8 @@
         </select>
       </figure>
     </fieldset><br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-    <button onclick="clicksubmitted()">submit</button><br>
-    <button type="reset">reset</button>
+    <button input type="submit" value="submit">submit</button>
+    <button input type="reset" value="reset">reset</button>
   </form>
   <script src="script.js"></script>
 </body>
