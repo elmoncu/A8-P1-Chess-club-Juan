@@ -41,7 +41,7 @@
           master level</a></li>
     </ul>
   </div>
-  <form>
+  <form action="/action_page.php">
     <div class="borddifer">
       <fieldset>
         <legend>Sign in: </legend>
@@ -64,7 +64,7 @@
         <input required type="text" name="email" id="email" placeholder="xadffere@gmail.com"><br>
         <label for="password">Password :</label>
         <input required type="password" value="FakePSW" id="password"><br>
-          <input type="checkbox" onclick="myFunction()">Show Password
+        <input type="checkbox" onclick="myFunction()">Show Password
       </fieldset>
     </div>
     <fieldset>
@@ -92,6 +92,8 @@
         </select>
       </figure>
     </fieldset><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
     <button onclick="clicksubmitted()">submit</button><br>
     <button type="reset">reset</button>
   </form>
