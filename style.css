@@ -101,6 +101,9 @@ background-color: #fbfb79;
 border: 1px solid red;
 }
 submit {
+  position:absolute;
+  top:570px;
+  left:1080px;
   width: 4em;
   border: 2px solid blue;
   border-radius: 10px 15px 20px 5px;
@@ -117,8 +120,8 @@ submit {
 }
 reset {
   position:absolute;
-  top:560px;
-  left:180px;
+  top:570px;
+  left:1280px;
   width: 3em;
   border: 2px solid blue;
   border-radius: 10px 15px 20px 5px;
