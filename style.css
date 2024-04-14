@@ -100,18 +100,37 @@ input:required {
 background-color: #fbfb79;
 border: 1px solid red;
 }
-button {
-  width: 5em;
-  height: 2em;
-  font-size: 20px;
-  text-align: left;
+submit {
+  width: 4em;
+  border: 2px solid blue;
   border-radius: 10px 15px 20px 5px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-family:"Arial";
+  text-align: left;
   box-shadow: 10px 10px 10px 10px;
   background-color: #d85bfb;
   color: #403eac;
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-bottom: 10px;
-  margin-right: 100px;
+}
+reset {
+  position:absolute;
+  top:560px;
+  left:180px;
+  width: 3em;
   border: 2px solid blue;
+  border-radius: 10px 15px 20px 5px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom:5px;
+  font-size: 30px;
+  font-family:"Arial";
+  text-align: left;
+  box-shadow: 10px 10px 10px 10px;
+  background-color: #d85bfb;
+  color: #403eac;
+  
 }
