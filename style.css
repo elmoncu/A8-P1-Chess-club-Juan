@@ -77,8 +77,8 @@ form {
   position:absolute;
   top: 5px;
   left: 1050px;
-  width: 360px;
-  height: 250px;
+  width:360px;
+  height:700px;
   padding-top: 5px;
   padding-right: 20px;
   padding-left: 10px;
@@ -101,9 +101,26 @@ background-color: #fbfb79;
 border: 1px solid red;
 }
 submit {
-  position:absolute;
-  top:570px;
-  left:1080px;
+  top:10px;
+  left:10px;
+  width: 4em;
+  border: 2px solid blue;
+  border-radius: 10px 15px 20px 5px;
+  margin: 20px 20px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-family:"Arial";
+  text-align: left;
+  box-shadow: 10px 10px 10px 10px;
+  background-color: #d85bfb;
+  color: #403eac;
+}
+reset {
+  top:10px;
+  left:100px;
   width: 4em;
   border: 2px solid blue;
   border-radius: 10px 15px 20px 5px;
@@ -117,23 +134,4 @@ submit {
   box-shadow: 10px 10px 10px 10px;
   background-color: #d85bfb;
   color: #403eac;
-}
-reset {
-  position:absolute;
-  top:570px;
-  left:1280px;
-  width: 3em;
-  border: 2px solid blue;
-  border-radius: 10px 15px 20px 5px;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom:5px;
-  font-size: 30px;
-  font-family:"Arial";
-  text-align: left;
-  box-shadow: 10px 10px 10px 10px;
-  background-color: #d85bfb;
-  color: #403eac;
-  
 }
