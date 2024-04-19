@@ -101,7 +101,7 @@ input:required {
 background-color: #fbfb79;
 border: 1px solid red;
 }
-submit {
+input[type=submit]{
   top:10px;
   left:10px;
   width: 4em;
@@ -119,7 +119,7 @@ submit {
   background-color: #d85bfb;
   color: #403eac;
 }
-reset {
+input[type=reset]{
   top:10px;
   left:100px;
   width: 4em;
