@@ -42,59 +42,59 @@
     </ul>
   </div>
   <form method="get" action="process.php" onsubmit="clicksubmitted()">
-    <! –– FUNCTION CLICKSUBMITTED linked with js to communicate people the data has been submitted ––>
-      <div class="borddifer">
-        <fieldset>
-          <legend>Sign in: </legend>
-          <label for="usern">Username:</label>
-          <input required type="text" name="Username" id="usern"><br>
-          <label for="adr">Adress :</label>
-          <input type="text" name="Adress" id="adr"><br>
-          <label for="city">City :</label>
-          <input type="text" name="City" id="city"><br>
-          <label for="state">State :</label>
-          <input required type="text" name="State" id="state" maxlength="2" placeholder="2 character code"><br>
-          <label for="zcode">Zipcode :</label>
-          <input required type="text" name="Zipcode" id="zcode" placeholder="5 or 9 digits" pattern="^\d{5}9-\d{4})?$"
-            title="Either 5 or 9 digits"><br>
-          <label for="date">Date :</label>
-          <input required type="text" name="date" id="date" value="" placeholder="mm/dd/yyyy"><br>
-          <label for="phone">Phone :</label>
-          <input required type="text" name="Phone" id="phone" value="" placeholder="xxx-xxx-xxxx"><br>
-          <label for="email">Email :</label>
-          <input required type="text" name="email" id="email" placeholder="xadffere@gmail.com"><br>
-          <label for="password">Password :</label>
-          <input required type="password" value="FakePSW" id="password"><br>
-          <input type="checkbox" onclick="myFunction()">Show Password
-        </fieldset>
-      </div>
       <fieldset>
-        <legend>Chess Game Level </legend>
-        <label for="level1">Beginner</label>
-        <input name="chess" id="level1" type="checkbox"><br>
-        <label for="level2">Intermediate</label>
-        <input name="chess" id="level2" type="checkbox"><br>
-        <label for="level3">Master</label>
-        <input name="chess" id="level3" type="checkbox"><br>
-      </fieldset><br>
-      <fieldset>
-        <legend>* Choose one of the CHESS CLUB options :</legend>
-        <figure>
-          <select name="Chesstrainning" id="Chesstrainning">
-            <optgroup label="Begineers">
-              <option value="Beginneron">Beginner on line </option>
-              <option value="Beginnerper">Beginner class in person </option>
-              <option value="">Medium/Masters </option>
-            </optgroup>
-            <optgroup label="Medium/Master Level">
-              <option value="Medium">medium level </option>
-              <option value="Master">master level </option>
-            </optgroup>
-          </select>
-        </figure>
-      </fieldset><br>
+        <legend>Sign in: </legend>
+        <label for="usern">Username:</label>
+        <input type="text" id="usern"><br>
+        <label for="adr">Adress :</label>
+        <input type="text" name="Adress" id="adr"><br>
+        <label for="city">City :</label>
+        <input type="text" id="city"><br>
+        <label for="state">State :</label>
+        <input type="text" id="state" maxlength="2" placeholder="2 character code" required pattern="[A-Z]{2}" oninput="upperletters()"><br>
+        <label for="zcode">Zipcode :</label>
+        <input type="text" id="zcode" required pattern="^\d{5}(-\d{4})?$"><br>
+    </div>
+    <label for="date">Date :</label>
+    <input type="text" id="date"><br>
+    <label for="phone">Phone :</label>
+    <input type="text" id="phone" placeholder="xxx-xxx-xxxx" required pattern="\d{3}-\d{3}-\d{4}"> <br>
+    <label for="email">Email :</label>
+    <input type="email" id="myemail" placeholder="example@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+    <label for="password">Password :</label>
+    <input type="password" id="password" placeholder="password" required pattern=>
+    <input type="checkbox" id="myCheck" onclick="myFunction()">Show Password<br>
+    </fieldset>
+    </div>
+    <fieldset>
+      <legend>Chess Game Level </legend>
+      <label for="level1">Beginner</label>
+      <input name="chess" id="level1" type="checkbox"><br>
+      <label for="level2">Intermediate</label>
+      <input name="chess" id="level2" type="checkbox"><br>
+      <label for="level3">Master</label>
+      <input name="chess" id="level3" type="checkbox"><br>
+    </fieldset><br>
+    <fieldset>
+      <legend>* Choose one of the CHESS CLUB options :</legend>
+      <figure>
+        <select name="Chesstrainning" id="Chesstrainning">
+          <optgroup label="Begineers">
+            <option value="Beginneron">Beginner on line </option>
+            <option value="Beginnerper">Beginner class in person </option>
+            <option value="">Medium/Masters </option>
+          </optgroup>
+          <optgroup label="Medium/Master Level">
+            <option value="Medium">medium level </option>
+            <option value="Master">master level </option>
+          </optgroup>
+        </select>
+      </figure>
+    </fieldset><br>
     <submit type="submit" value="submit">Submit</submit>
     <reset type="reset" value="reset">Reset</reset>
   </form>
+  <script src="script.js"></script>
 </body>
+
 </html>
