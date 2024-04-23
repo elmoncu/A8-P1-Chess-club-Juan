@@ -7,6 +7,9 @@
   <title>Chess Club WPS60</title>
   <script src="https://kit.fontawesome.com/64287c2fd0.js" crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+
 </head>
 
 <body>
@@ -91,6 +94,30 @@
     <input type="submit" value="submit">
     <input type="reset" value="reset">
   </form>
+  
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBakp2H07WXBriM4XB-zzg97XaHbQ675P0",
+      authDomain: "chess-club-23a9d.firebaseapp.com",
+      projectId: "chess-club-23a9d",
+      storageBucket: "chess-club-23a9d.appspot.com",
+      messagingSenderId: "856561971588",
+      appId: "1:856561971588:web:d3fcde09a30c8ab1126dd1",
+      measurementId: "G-FE449NN71F"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <script src="script.js"></script>
 </body>
 
