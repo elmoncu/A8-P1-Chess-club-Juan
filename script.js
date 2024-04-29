@@ -128,5 +128,28 @@ function editMadLib() {
     document.getElementById("story").innerHTML = "Story not found";
   });
 }
+function deleteMadLib() {
+  console.log("deleteMadLib: " + storyData);
+  var storyData = prompt("Enter the name of the story you want to delete:");
+  db.collection("ChessClubJuan")
+  .doc(storyData)
+  .get()
+  .then((doc) => {
+    if(document.exists){
+      console.log("Story Doc data: ", doc.data());
+      var storyData = doc.data();
+      document.getElementById("story").innerHTML= storyData.storyName + " has been deleted from the database";db.colleciton("ChessClubJuan").doc(storyData.storyName).delete();
+    } else {
+      // doc.data() will be undefined in this case
+      console.log("No such document!");
+      document.getElementById("story").value = "Story not found";
+    }
+  })
+  .catch((error) => {
+    console.log("Error getting document:", error);
+    document.getElementById("story").innerHTML = "Story not found";
+  });
+  }
+
 
 
