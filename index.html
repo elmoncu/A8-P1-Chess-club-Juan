@@ -18,8 +18,8 @@
       CHESS CLUB WPS60</div>
   </header>
   <section>
-  <h1 id = "start">Hey Guys , It's time to play chess toghether!!!</h1>
-      <p><i>We are looking forward to meet people to get a chess match.<br>
+    <h1 id="start">Hey Guys , It's time to play chess toghether!!!</h1>
+    <p><i>We are looking forward to meet people to get a chess match.<br>
         If you are interested to have fun playing chess, please fill out this attach form , and we will take contact
         to
         you to start our chess challenge ASAP.</i></p>
@@ -44,30 +44,32 @@
     </ul>
   </div>
   <form method="get" action="process.php" onsubmit="clicksubmitted()">
-      <fieldset>
-        <legend>Sign in: </legend>
-        <label for="usern">Username:</label>
-        <input type="text" id="usern"><br>
-        <label for="adr">Adress :</label>
-        <input type="text" name="Adress" id="adr"><br>
-        <label for="city">City :</label>
-        <input type="text" id="city"><br>
-        <label for="state">State :</label>
-        <input type="text" id="state" maxlength="2" placeholder="2 capital letters" required pattern="[A-Z]{2}" oninput="upperCase()"><br>
-        <label for="zcode">Zipcode :</label>
-        <input type="text" id="zcode" required pattern="^\d{5}(-\d{4})?$"><br>
-        <label for="date">Date :</label>
-        <input type="text" id="date"><br>
-        <label for="phone">Phone :</label>
-        <input type="text" id="phone" placeholder="xxx-xxx-xxxx" required pattern="\d{3}-\d{3}-\d{4}"> <br>
-        <label for="myemail">Email :</label>
-        <input type="email" id="myemail" placeholder="example@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
-        <label for="myInput">Password :</label>
-        <input type="password" value="FakePSW" id="myInput" required>
-        <input type="checkbox" onclick="myFunction()">Show Password<br>
-      </fieldset>
     <fieldset>
-      <legend>Chess Game Level </legend>
+      <legend>Sign in: </legend>
+      <label for="usern">Username:</label>
+      <input type="text" id="usern"><br>
+      <label for="adr">Adress :</label>
+      <input type="text" name="Adress" id="adr"><br>
+      <label for="city">City :</label>
+      <input type="text" id="city"><br>
+      <label for="state">State :</label>
+      <input type="text" id="state" maxlength="2" placeholder="2 capital letters" required pattern="[A-Z]{2}"
+        oninput="upperCase()"><br>
+      <label for="zcode">Zipcode :</label>
+      <input type="text" id="zcode" required pattern="^\d{5}(-\d{4})?$"><br>
+      <label for="date">Date :</label>
+      <input type="text" id="date"><br>
+      <label for="phone">Phone :</label>
+      <input type="text" id="phone" placeholder="xxx-xxx-xxxx" required pattern="\d{3}-\d{3}-\d{4}"> <br>
+      <label for="myemail">Email :</label>
+      <input type="email" id="myemail" placeholder="example@gmail.com" required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+      <label for="myInput">Password :</label>
+      <input type="password" value="FakePSW" id="myInput" required>
+      <input type="checkbox" onclick="myFunction()">Show Password<br>
+    </fieldset>
+    <fieldset>
+      <legend>Chess Game Level (your level) </legend>
       <label for="level1">Beginner</label>
       <input name="chess" id="level1" type="checkbox"><br>
       <label for="level2">Intermediate</label>
@@ -76,7 +78,7 @@
       <input name="chess" id="level3" type="checkbox"><br>
     </fieldset><br>
     <fieldset>
-      <legend>* Choose one of the CHESS CLUB options :</legend>
+      <legend>* Choose CLASS LEVEL you wanted to attend:</legend>
       <figure>
         <select name="Chesstrainning" id="Chesstrainning">
           <optgroup label="Begineers">
@@ -91,9 +93,19 @@
         </select>
       </figure>
     </fieldset><br>
-    <input type="submit" value="submit">
+    <input type="submit" value="submit" onclick="getStory">
     <input type="reset" value="reset">
   </form>
+  <h4 div="orangemadlibs">* Only Chess Club Members: </h4>
+      <label for="story">Story Name:</label>
+      <input type="text" id="story"><br>
+      <p id="output"></p>
+      <button id="createStory" onclick="createMadLibstory()">CREATE Madlib story</button>
+      <button id="saveButton" onclick="saveMadLib()">SAVE Madlib story</button>
+      <button id="retrieveButton" onclick="retrieveMadLib()">RETRIEVE Madlib </button>
+      <button id="editButton" onclick="editMadLib()">EDIT Madlib story </button>
+      <button id="deleteButton" onclick="deleteMadLib()">DELETE Madlib </button>
+  </div>
   
   <script type="module"></script>
   <script src="script.js"></script>

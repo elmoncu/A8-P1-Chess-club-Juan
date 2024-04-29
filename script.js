@@ -31,4 +31,73 @@ function myFunction() {
 function clicksubmitted() {
   prompt("Your data have been submitted succesfully");
 }
+function getStory(){
+  var usEr = document.getElementById("usern").value;
+  var stAte = document.getElementById("state").value;
+  var zipCode = document.getElementById("zcode").value;
+  var pHone = document.getElementById("phone").value;
+  var emAiL = document.getElementById("myemail").value;
+  var passW = document.getElementById("myInput").value;
+  var storyName = document.getElementById("story").value;
+  document.getElementById("output").innerHTML= story;
+  console.log("output");
+
+  var storyData = {
+    timestamp: Date.now(),
+    username: usEr,
+    state: stAte,
+    zipcode: zipCode,
+    phone: pHone,
+    email: emAiL,
+    password: passW,
+    storyName: storyName,
+    }
+    return storyData;
+  }
+function createMadLibstory(){
+  var storyData = getStory();
+  console.log("storyData: " + storyData)
+}
+
+function saveMadLib() {
+  var storyData = getStory();
+  var storyName = document.getElementById("story").value;
+  //this method saves the madllib to the database
+  console.log("saveMadLib: " + storyData);
+  // then, save the story and storyData to the database
+  db.collection("ChessClubJuan").doc(storyData.storyName).set(storyData);
+  alert(storyData.storyName + " has been saved to the database");
+}
+
+function retrieveMadLib(){
+  //first, ask the used for the story name they want to retrieve
+  var storyName = prompt("Enter the name of the story you want to retrieve");db.collection("ChessClubJuan")
+  .doc(storyName)
+  .get()
+  .tthen((doc) => {
+    if (doc.exists) {
+      console.log("Document data:", doc.data());
+      var storyData = doc.data();
+      console.log("storyName: " + storyData.storyName);
+      document.getElementById("user").value = storyData.username;
+      document.getElementById("state").value = storyData.state;
+      document.getElementById("zcode").value = storyData.zipcode;
+      document.getElementById("phone").value = storyData.phone;
+      document.getElementById("myemail").value = storyData.email;
+      document.getElementById("myInput").value = storyData.password;
+      document.getElementById("story").value = storyData.storyName;
+    } else {
+      // doc.data() will be undefined in this case
+      console.log("No such document!");
+      document.getElementById("story").value = "Story not found";
+    }
+    //this method retrieves an existing story from the database
+    console.log("retrieveMadLib: " + storyName);
+  })
+  .catch((error) => {
+    console.log("Error getting document:", error);
+    document.getElementById("story").innerHTML = "Story not found";
+  });
+}
+
 

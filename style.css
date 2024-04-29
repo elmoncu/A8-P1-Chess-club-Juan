@@ -1,89 +1,98 @@
-
-body{
+body {
   background-repeat: no-repeat;
   background-image: url("images/bulldogs3.png");
   background-color: greenyellow;
 }
-.chessclub{
+
+.chessclub {
   width: 400px;
-  float:left;
+  float: left;
   transition: width 3s;
   color: #a336dd;
   font-size: 40px;
-  font-family:"cambria";
+  font-family: "cambria";
   text-shadow: 5px 5px #0be407;
   text-align: left;
   font-weight: bold;
-  margin-top: 30px; 
+  margin-top: 30px;
   margin-left: 450px;
-  margin-bottom:1px;
-  margin-right:250px;
+  margin-bottom: 1px;
+  margin-right: 250px;
 }
-.purpose{
+
+.purpose {
   color: #0f57a3;
   width: 38em;
   font-size: 20px;
   text-align: left;
   /*text-decoration: underline solid #38f702;
   text-underline-offset: 6px;*/
-  font-family:"Arial";
+  font-family: "Arial";
   font-weight: bold;
   margin-top: 10px;
-  margin-right:100px; 
-  margin-bottom:10px;
-  margin-left:120px;  
+  margin-right: 100px;
+  margin-bottom: 10px;
+  margin-left: 120px;
 }
-.learning{
-  font-family:"Arial";
+
+.learning {
+  font-family: "Arial";
   width: 50em;
-  top:10px;
+  top: 10px;
   color: greenyellow;
   font-size: 20px;
-  margin-right:100px; 
-  margin-bottom:10px;
-  margin-left:120px;  
+  margin-right: 100px;
+  margin-bottom: 10px;
+  margin-left: 120px;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
   color: #ff000d;
   width: 25em;
   font-size: 30px;
-  font-family:"Cambria";
+  font-family: "Cambria";
   text-align: left;
   font-weight: bold;
   margin-top: 15px;
-  margin-right:100px;
-  margin-bottom:10px;
-  margin-left:100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  margin-left: 100px;
 }
-ol{
-  position:relative;
-  font-family:"Arial";
+
+ol {
+  position: relative;
+  font-family: "Arial";
   text-align: left;
   top: 10px;
 }
-p{
+
+p {
   color: #0008ff;
   width: 38em;
   font-size: 20px;
   text-align: center;
-  font-family:"Arial";
+  font-family: "Arial";
   font-weight: bold;
   margin-top: 10px;
-  margin-right:100px; 
-  margin-bottom:10px;
-  margin-left:120px;  
+  margin-right: 100px;
+  margin-bottom: 10px;
+  margin-left: 120px;
 }
+
 form {
-  position:absolute;
-  top: 20px;
+  position: absolute;
+  top: 10px;
   left: 1050px;
-  width:360px;
-  height:800px;
-  padding-top: 5px;
+  width: 360px;
+  height: 800px;
+  padding-top: 10px;
   padding-right: 20px;
   padding-left: 10px;
-  padding-bottom: 30px;
-  } 
+  padding-bottom: 10px;
+}
+
 label {
   color: red;
   float: left;
@@ -91,19 +100,22 @@ label {
   text-align: right;
   font-weight: bold;
 }
+
 input {
-  width: 10em;
+  width: 10pm;
   background-color: #bcb8b8;
-  margin-bottom: 10px;
-  margin-left:1em;
+  margin-bottom: 15px;
+  margin-left: 1em;
 }
+
 input:required {
-background-color: #fbfb79;
-border: 1px solid red;
+  background-color: #fbfb79;
+  border: 1px solid red;
 }
-input[type=submit]{
-  top:10px;
-  left:10px;
+
+input[type=submit] {
+  top: 10px;
+  left: 10px;
   width: 4em;
   border: 2px solid blue;
   border-radius: 10px 15px 20px 5px;
@@ -113,15 +125,17 @@ input[type=submit]{
   padding-left: 10px;
   padding-bottom: 5px;
   font-size: 30px;
-  font-family:"Arial";
+  font-family: "Arial";
   text-align: left;
   box-shadow: 10px 10px 5px 10px;
   background-color: #d85bfb;
   color: #403eac;
 }
-input[type=reset]{
-  top:10px;
-  left:100px;
+
+input[type=reset] {
+  top: 10px;
+  left: 100px;
+  bottom: 15px;
   width: 4em;
   border: 2px solid blue;
   border-radius: 10px 15px 20px 5px;
@@ -130,9 +144,36 @@ input[type=reset]{
   padding-left: 10px;
   padding-bottom: 5px;
   font-size: 30px;
-  font-family:"Arial";
+  font-family: "Arial";
   text-align: left;
   box-shadow: 10px 10px 5px 10px;
   background-color: #d85bfb;
   color: #403eac;
+}
+
+button {
+  top: 50px;
+  left: 100px;
+  width: 7em;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 2px solid #ff00d0;
+  border-radius: 10px 15px 20px 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-family: "Arial";
+  text-align: left;
+  box-shadow: 5px 5px 5px 5px;
+  background-color: orange;
+  color: #e50649;
+}
+
+h4{
+  top:10px;
+  left:100px;
+  right:800px;
+  width:20em;
 }
