@@ -113,7 +113,7 @@ input:required {
   border: 1px solid red;
 }
 
-input[type=submit] {
+button[type=submit] {
   top: 10px;
   left: 10px;
   width: 4em;
