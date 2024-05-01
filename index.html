@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Chess Club WPS60</title>
-  <script src="https://kit.fontawesome.com/64287c2fd0.js" crossorigin="anonymous"></script>
+  <!--
+  <script src="https://kit.fontawesome.com/64287c2fd0.js" crossorigin="anonymous"></script>___>
+  -->
   <link href="style.css" rel="stylesheet" type="text/css">
   <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
@@ -42,7 +44,7 @@
           master level</a></li>
     </ul>
   </div>
-  <form method="get" action="process.php" onsubmit="clicksubmitted()">
+  <form>
     <fieldset>
       <legend>Sign in: </legend>
       <label for="usern">Username:</label>
@@ -92,19 +94,22 @@
         </select>
       </figure>
     </fieldset><br>
-    <button type="submit" onclick="getStory()">Submit</button>
+    <!--
+    <button type="submit" onclick="saveMadLib()">Submit</button>
+    -->
     <input type="reset" value="Reset">
+  
   </form>
-  <h4 id="orangemadlibs">* Only Chess Club Members: </h4>
+  <h4 id="orangemadlibs">* Only Chess Club Members:</h4>
       <label for="story">Story Name:</label>
       <input type="text" id="story"><br>
       <p id="output"></p>
-      <button id="createStory" onclick="createMadLibstory()">CREATE Madlib story</button>
+      <!--<button id="createStory" onclick="createMadLibstory()">CREATE Madlib story</button>
+      -->
       <button id="saveButton" onclick="saveMadLib()">SAVE Madlib story</button>
-      <button id="retrieveButton" onclick="retrieveMadLib()">RETRIEVE Madlib </button>
-      <button id="editButton" onclick="editMadLib()">EDIT Madlib story </button>
-      <button id="deleteButton" onclick="deleteMadLib()">DELETE Madlib </button>
-  <script type="module"></script>
+      <button id="retrieveButton" onclick="retrieveMadLib()">RETRIEVE Madlib</button>
+      <button id="editButton" onclick="editMadLib()">EDIT Madlib story</button>
+      <button id="deleteButton" onclick="deleteMadLib()">DELETE Madlib</button>
   <script src="script.js"></script>
 </body>
 

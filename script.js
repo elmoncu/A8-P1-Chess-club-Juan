@@ -40,8 +40,9 @@ function getStory(){
   var emAiL = document.getElementById("myemail").value;
   var passW = document.getElementById("myInput").value;
   var storyName = document.getElementById("story").value;
+  console.log("story name:"+storyName);
   document.getElementById("output").innerHTML= story;
-  console.log("output");
+  console.log("output :" +story );
 
   var storyData = {
     timestamp: Date.now(),
@@ -61,6 +62,7 @@ function createMadLibstory(){
 }
 
 function saveMadLib() {
+  console.log("saveMadLib called: ");
   var storyData = getStory();
   var storyName = document.getElementById("story").value;
   //this method saves the madllib to the database
@@ -72,27 +74,27 @@ function saveMadLib() {
 
 function retrieveMadLib(){
   //first, ask the used for the story name they want to retrieve
-  var storyName = prompt("Enter the name of the story you want to retrieve");db.collection("ChessClubJuan")
+  var storyName = prompt("Enter the name of the story you want to retrieve (in console):"); db.collection("ChessClubJuan")
   .doc(storyName)
   .get()
-  .tthen((doc) => {
+  .then((doc) => {
     if (doc.exists) {
       console.log("Document data:", doc.data());
       var storyData = doc.data();
       console.log("storyName: " + storyData.storyName);
-      document.getElementById("user").value = storyData.username;
-      document.getElementById("state").value = storyData.state;
-      document.getElementById("zcode").value = storyData.zipcode;
-      document.getElementById("phone").value = storyData.phone;
-      document.getElementById("myemail").value = storyData.email;
-      document.getElementById("myInput").value = storyData.password;
-      document.getElementById("story").value = storyData.storyName;
+      document.getElementById("usern").innerHTML  = storyData.username;
+      document.getElementById("state").innerHTML = storyData.state;
+      document.getElementById("zcode").innerHTML = storyData.zipcode;
+      document.getElementById("phone").innerHTML = storyData.phone;
+      document.getElementById("myemail").innerHTML = storyData.email;
+      document.getElementById("myInput").innerHTML = storyData.password;
+      document.getElementById("story").innerHTML = storyData.storyName;
     } else {
       // doc.data() will be undefined in this case
       console.log("No such document!");
       document.getElementById("story").value = "Story not found";
     }
-    //this method retrieves an existing story from the database
+    //this method retrieves an existing story from the database to the console , not the webpage
     console.log("retrieveMadLib: " + storyName);
   })
   .catch((error) => {
@@ -101,22 +103,22 @@ function retrieveMadLib(){
   });
 }
 function editMadLib() {
+  //this method retrieves an existing story from the database to the webpage ( in the imput box)
   console.log("editMadLib: " + storyData);
-  var storyName = prompt("Enter the name of the story you want to look up:");
-  db.collection("ChessClubJuan")
-    .doc(storyName)
-    .get()
-    .then((doc) => {
+  var storyData = prompt("Enter the name of the story you want to pop up in the form:"); db.collection("ChessClubJuan")
+  .doc(storyData)
+  .get()
+  .then((doc) => {
       if (doc.exists) {
-        console.log("Story Doc data: ",doc.data());
+        console.log("Document data: ", doc.data());
         var storyData = doc.data();
-        document.getElementById("user").value = storyData.username;
+        document.getElementById("usern").value  = storyData.username;
         document.getElementById("state").value = storyData.state;
         document.getElementById("zcode").value = storyData.zipcode;
-        document.getElementById("phone").value = storyData.phone;
+        document.getElementById("phone").value  = storyData.phone;
         document.getElementById("myemail").value = storyData.email;
         document.getElementById("myInput").value = storyData.password;
-        document.getElementById("story").value = storyData.storyName;
+        document.getElementById("story").value  = storyData.storyName;
     } else {
       // doc.data () will be undefined in this case
       console.log("No such document!");
@@ -130,8 +132,7 @@ function editMadLib() {
 }
 function deleteMadLib() {
   console.log("deleteMadLib: " + storyData);
-  var storyData = prompt("Enter the name of the story you want to delete:");
-  db.collection("ChessClubJuan")
+  var storyData = prompt("Enter the name of the story you want to delete:");db.collection("ChessClubJuan")
   .doc(storyData)
   .get()
   .then((doc) => {
@@ -142,7 +143,7 @@ function deleteMadLib() {
     } else {
       // doc.data() will be undefined in this case
       console.log("No such document!");
-      document.getElementById("story").value = "Story not found";
+      document.getElementById("story").innerHTML  = "Story not found";
     }
   })
   .catch((error) => {
