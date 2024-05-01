@@ -131,7 +131,7 @@ function editMadLib() {
   });
 }
 function deleteMadLib() {
-  console.log("deleteMadLib: " + storyData);
+  console.log("deleteMadLib() called : ");
   var storyData = prompt("Enter the name of the story you want to delete:");db.collection("ChessClubJuan")
   .doc(storyData)
   .get()
