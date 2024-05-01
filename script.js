@@ -139,7 +139,7 @@ function deleteMadLib() {
     if(document.exists){
       console.log("Story Doc data: ", doc.data());
       var storyData = doc.data();
-      document.getElementById("story").innerHTML= storyData.storyName + " has been deleted from the database";db.colleciton("ChessClubJuan").doc(storyData.storyName).delete();
+      document.getElementById("story").innerHTML= storyData.storyName + " has been deleted from the database"; db.collection("ChessClubJuan").doc(storyData.storyName).delete();
     } else {
       // doc.data() will be undefined in this case
       console.log("No such document!");
