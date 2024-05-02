@@ -136,7 +136,7 @@ function deleteMadLib() {
   .doc(storyData)
   .get()
   .then((doc) => {
-    if(document.exists){
+    if(doc.exists){
       console.log("Story Doc data: ", doc.data());
       var storyData = doc.data();
       document.getElementById("story").innerHTML= storyData.storyName + " has been deleted from the database"; db.collection("ChessClubJuan").doc(storyData.storyName).delete();
