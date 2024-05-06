@@ -151,9 +151,9 @@ function deleteMadLib() {
     document.getElementById("story").innerHTML = "Story not found";
   });
   }
-
+var windowRef=window.open("https://www.chess.com/home","_blank");
 function goBack() {
-  <a href="videos.html">To learn from the begining</a>
+  var window = window.open("index.html", "_self");
   window.history.back()
 }
 
