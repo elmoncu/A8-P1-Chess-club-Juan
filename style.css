@@ -184,7 +184,7 @@ button {
   color: #e50649;
 }
 
-button [onclick] {
+input[type=button] {
   top: 50px;
   left: 100px;
   width: 10em;
@@ -202,6 +202,7 @@ button [onclick] {
   box-shadow: 5px 5px 5px 5px;
   background-color: orange;
   color: #e50649;
+}
 
 h5{
   top:10px;
