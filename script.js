@@ -152,5 +152,8 @@ function deleteMadLib() {
   });
   }
 
-
+function goBack() {
+  <a href="videos.html">To learn from the begining</a>
+  window.history.back()
+}
 
