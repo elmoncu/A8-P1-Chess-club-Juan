@@ -152,10 +152,7 @@ function deleteMadLib() {
     });
 }
 
-//const location = <a href="index.html"></a>
-//function myFunction() {
-//location.assign(location);
-//}
+
 
 
 
