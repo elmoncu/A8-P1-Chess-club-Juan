@@ -79,10 +79,32 @@ body {
   margin-left: 120px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
+  color: #ff000d;
+  width: 25em;
+  font-size: 30px;
+  font-family: "Cambria";
+  text-align: left;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+h2 {
+  color: #ff000d;
+  width: 25em;
+  font-size: 30px;
+  font-family: "Cambria";
+  text-align: left;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+h3,h4 {
   color: #ff000d;
   width: 25em;
   font-size: 30px;
@@ -94,6 +116,7 @@ h4 {
   margin-bottom: 10px;
   margin-left: 100px;
 }
+
 
 ol {
   position: relative;
@@ -189,15 +212,22 @@ button {
 .btn_link {
   position:relative;
   top: 10px;
-  left: 300px;
-  width: 30em;
+  left: 350px;
+  width: 12em;
   font-size: 30px;
   padding: 18 px;
   text-align: center;
-  background-color: red;
+  border-radius: 10px 5px 5px 5px;
+  background-color: #8000ff;
   color: white;
-  border: solid 1px #a6d8a8;
+  border: solid 1px #0b19e0;
   margin: auto;
+}
+
+.container {
+  font-size: 20px;
+  font-family: "Arial"; 
+  color: green;
 }
 
 h5 {
